@@ -17,6 +17,7 @@ Source0: %{distname}.tar.bz2
 License: GPL
 Group: Networking/Other
 Url: http://www.netfilter.org/projects/%{name}
+BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: libnetfilter_conntrack-devel
 
 %description
