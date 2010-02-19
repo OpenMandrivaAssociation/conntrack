@@ -36,12 +36,12 @@ Main Features:
 %setup -q -n %{distname}
 
 %build
-%configure
+%configure2_5x
 %make
 
 %install
 rm -rf %{buildroot}
-%makeinstall
+%makeinstall_std
 
 %clean
 rm -rf %{buildroot}
