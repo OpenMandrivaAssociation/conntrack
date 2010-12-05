@@ -5,7 +5,7 @@
 %define release %mkrel 0.beta%{beta}
 %define distname %{name}-%{version}beta%{beta}
 %else
-%define release %mkrel 3
+%define release %mkrel 4
 %define distname %{name}-%{version}
 %endif
 
