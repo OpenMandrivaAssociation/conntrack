@@ -19,6 +19,7 @@ Group: Networking/Other
 Url: http://conntrack-tools.netfilter.org/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: libnetfilter_conntrack-devel >= 0.9.1
+BuildRequires: bison
 
 %description
 conntrack is a userspace command line program targeted at system
