@@ -42,6 +42,8 @@ Main Features:
 %install
 rm -rf %{buildroot}
 %makeinstall_std
+mkdir -p %{buildroot}%{_sysconfdir}
+install -m644 doc/stats/conntrackd.conf %{buildroot}%{_sysconfdir}
 
 %clean
 rm -rf %{buildroot}
@@ -53,5 +55,6 @@ rm -rf %{buildroot}
 %{_sbindir}/%{name}d
 %{_mandir}/man8/%{name}.8*
 %{_mandir}/man8/%{name}d.8*
+%{_sysconfdir}/%{name}d.conf
 
 
