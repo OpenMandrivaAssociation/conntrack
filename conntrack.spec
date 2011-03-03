@@ -48,12 +48,10 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%doc AUTHORS ChangeLog
+%doc AUTHORS
 %{_sbindir}/%{name}
-%dir %{_libdir}/%{name}
-%{_libdir}/%{name}/*.so
-%{_libdir}/%{name}/*.a
-%{_libdir}/%{name}/*.la
+%{_sbindir}/%{name}d
 %{_mandir}/man8/%{name}.8*
+%{_mandir}/man8/%{name}d.8*
 
 
