@@ -1,24 +1,24 @@
 %define name conntrack
-%define version 1.00
-%define beta 2
+%define version 1.0.0
+%define beta 0
 %if %beta
 %define release %mkrel 0.beta%{beta}
-%define distname %{name}-%{version}beta%{beta}
+%define distname %{name}-tools-%{version}beta%{beta}
 %else
-%define release %mkrel 4
-%define distname %{name}-%{version}
+%define release %mkrel 1
+%define distname %{name}-tools-%{version}
 %endif
 
 Summary: Tool to manage the in-kernel connection tracking state table
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source0: %{distname}.tar.bz2
+Source0: http://www.netfilter.org/projects/conntrack-tools/files/%{distname}.tar.bz2
 License: GPL
 Group: Networking/Other
-Url: http://www.netfilter.org/projects/%{name}
+Url: http://conntrack-tools.netfilter.org/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires: libnetfilter_conntrack-devel
+BuildRequires: libnetfilter_conntrack-devel >= 0.9.1
 
 %description
 conntrack is a userspace command line program targeted at system
