@@ -60,3 +60,39 @@ rm -rf %{buildroot}
 %{_sysconfdir}/%{name}d.conf
 
 
+
+
+%changelog
+* Fri Mar 04 2011 Eugeni Dodonov <eugeni@mandriva.com> 1.0.0-1mdv2011.0
++ Revision: 641553
+- add flex BR
+- Add bison as BR
+- Install sample config file for conntrackd.
+- Install conntrackd as well.
+- Updated to 1.0.0 final.
+  Updated URL.
+
+  + Oden Eriksson <oeriksson@mandriva.com>
+    - rebuild
+
+* Fri Feb 19 2010 Funda Wang <fwang@mandriva.org> 1.00-0.beta2mdv2010.1
++ Revision: 508114
+- rebuild
+
+* Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 1.00-0.beta2mdv2009.0
++ Revision: 243627
+- rebuild
+
+* Fri Dec 21 2007 Olivier Blin <oblin@mandriva.com> 1.00-0.beta2mdv2008.1
++ Revision: 136335
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+
+* Thu Nov 16 2006 Olivier Blin <oblin@mandriva.com> 1.00-0.beta2mdv2007.0
++ Revision: 84851
+- initial conntrack release
+- Create conntrack
+
