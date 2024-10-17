@@ -16,7 +16,7 @@ Release: %{release}
 Source0: http://www.netfilter.org/projects/conntrack-tools/files/%{distname}.tar.bz2
 License: GPL
 Group: Networking/Other
-Url: http://conntrack-tools.netfilter.org/
+Url: https://conntrack-tools.netfilter.org/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: libnetfilter_conntrack-devel >= 0.9.1
 BuildRequires: bison
