@@ -18,6 +18,11 @@ License: GPL
 Group: Networking/Other
 Url: https://conntrack-tools.netfilter.org/
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: libnetfilter_conntrack-devel >= 0.9.1
 BuildRequires: bison
 BuildRequires: flex
